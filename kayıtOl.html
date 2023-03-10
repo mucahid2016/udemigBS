@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Udemig | Kayit OL</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/css/bootstrap.min.css" />
+</head>
+<style>
+    .card {
+        transition: all 0.5s;
+    }
+
+    .card:hover {
+        transform: translate(10px, -10px);
+        box-shadow: 2px 2px 20px black;
+        transition: all 0.5s;
+    }
+
+    .btn:hover {
+        transform: scale(1.05);
+        background-color: crimson;
+        border-radius: 50px;
+        transition: all 0.4s;
+    }
+</style>
+
+<body>
+    <!-- HEADER -->
+    <nav class="navbar navbar-dark navbar-expand-lg bg-dark stick-top">
+        <div class="container-fluid">
+            <a class="navbar-brand fw-bold fs-1" href="index.html">
+                <img src="images/Udemig.png" style="width: 50px;">
+                UDEMIG
+            </a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Menu</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-end flex-grow-1 pe-3">
+                        <li class="nav-item">
+                            <a class="nav-link active" aria-current="page" href="index.html">Anasayfa</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="egitim.html">Eğitimlerimiz</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="iletisim.html">İletişim</a>
+                        </li>
+                    </ul>
+                    <div class="btn-group">
+                        <a href="kayıtOl.html" class="btn btn-primary">Kayit OL</a>
+                        <a href="kayıtOl.html" class="btn btn-success">Giriş Yap</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <div class="row d-flex align-items-center justify-content-center" style="height: 90vh
+    ;">
+        <div class="container justify-content-center d-flex col-lg-4  col-md-5">
+            <div class="row  ">
+                <form class="shadow p-3 rounded">
+                    <div class="d-flex justify-content-center">
+                        <img src="images/Udemig.png" style="width: 100px;">
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputEmail1" class="form-label">Email address</label>
+                        <input type="email" class="form-control" id="exampleInputEmail1" aria-describedby="emailHelp">
+                        <div id="emailHelp" class="form-text">We'll never share your email with anyone else.</div>
+                    </div>
+                    <div class="mb-3">
+                        <label for="exampleInputPassword1" class="form-label">Password</label>
+                        <input type="password" class="form-control" id="exampleInputPassword1">
+                    </div>
+                    <div class="mb-3 form-check">
+                        <input type="checkbox" class="form-check-input" id="exampleCheck1">
+                        <label class="form-check-label" for="exampleCheck1">Check me out</label>
+                    </div>
+                    <div class="row px-3">
+                        
+                        <button type="submit" class="btn btn-primary">Submit</button>
+                    </div>
+
+                </form>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/bootstrap/5.2.3/js/bootstrap.min.js"></script>
+</body>
+
+</html>
